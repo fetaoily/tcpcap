@@ -1,0 +1,24 @@
+# Binaries / build artifacts
+*.exe
+*.exe~
+tcpcap
+tcpcap-linux-*
+tcpcap-windows-*
+
+# Runtime capture output (generated, not source)
+*.jsonl
+
+# Go
+/vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*.orig
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
