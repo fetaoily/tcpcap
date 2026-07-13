@@ -2,6 +2,8 @@
 
 > [English](README.md) | 简体中文
 
+> ⚠️ **本项目已归档。** `tcpcap` 已合并进 [`pktcap`](https://github.com/fetaoily/pktcap) —— 一个同时抓取 TCP 和 UDP、输出同样结构化数据的单一工具。`pktcap` 是当前维护的继任者,请改用它。本仓库仅作历史参考保留,已设为只读。
+
 一个用 Go 编写的轻量级 TCP 抓包工具,功能类似 `tcpdump`,但**专注于 TCP** 且输出**结构化的 JSON / 文本**,并把 TCP 特有字段(seq、ack、flags、window)以结构化方式暴露出来,便于其他程序(日志收集、数据分析、Python 脚本、SIEM 等)直接解析,解决 tcpdump 文本输出难以程序化解析的问题。
 
 底层基于 [gopacket](https://github.com/google/gopacket) + libpcap(Windows 下即 Npcap),与 tcpdump 同源,过滤在**内核态 BPF** 完成,效率高。

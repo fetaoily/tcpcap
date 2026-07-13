@@ -2,6 +2,8 @@
 
 > English | [中文](README_zh-CN.md)
 
+> ⚠️ **This project is archived.** `tcpcap` has been merged into [`pktcap`](https://github.com/fetaoily/pktcap), a single tool that captures both TCP and UDP with the same structured output. `pktcap` is the actively maintained successor — use it instead. This repository is kept for historical reference and is read-only.
+
 A lightweight TCP packet capture tool written in Go. It works like `tcpdump` but **focuses on TCP** and outputs **structured JSON / text**, exposing TCP-specific fields (seq, ack, flags, window) in a parseable form — making it easy for other programs (log collectors, data analytics, Python scripts, SIEM, etc.) to consume directly, and solving the problem that tcpdump's text output is hard to parse programmatically.
 
 It is built on [gopacket](https://github.com/google/gopacket) + libpcap (Npcap on Windows), the same lineage as tcpdump. Filtering is done in **kernel-space BPF** for high efficiency.
